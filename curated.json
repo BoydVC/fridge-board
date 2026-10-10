@@ -1,0 +1,39 @@
+{
+  "_about": "Hand-transcribed items from the tutor bots' own notes. Every entry carries a 'needle' that collect.py must find VERBATIM in the named source, or the entry is dropped and reported. Nothing here is shown unless its source confirms it. Names/scores only; no chat text.",
+  "items": [
+    {"kid": "char", "kind": "win", "subject": "ELA", "name": "Summer Work Presentation", "score": "5/5", "date": "2026-09-09", "source": "char_transcript", "needle": "Summer Work Presentation 5/5"},
+    {"kid": "char", "kind": "win", "subject": "Science", "name": "IXL skill 6Q7", "score": "10/10", "date": "2026-09-14", "due": "2026-09-10", "source": "char_log", "needle": "IXL Code 6Q7 10/10 due 9/10"},
+    {"kid": "char", "kind": "win", "subject": "ELA", "name": "Email Etiquette", "score": "5/5", "date": "2026-09-15", "due": "2026-09-08", "source": "char_log", "needle": "Email Etiquette 5/5"},
+    {"kid": "char", "kind": "win", "subject": "Spanish", "name": "Repaso", "score": "20/20", "date": "2026-09-15", "source": "char_log", "needle": "Repaso 20/20"},
+
+    {"kid": "char", "kind": "focus", "subject": "Science", "name": "Exit ticket from 9/11", "step": "Turn it in. It hasn't been handed in yet", "date": "2026-09-15", "source": "char_log", "needle": "Exit ticket 9/11 Missing 0/4"},
+    {"kid": "char", "kind": "focus", "subject": "Science", "name": "Warm Up: Building Blocks of Matter (9/11)", "step": "Turn it in. Her teacher asked for it", "date": "2026-09-15", "source": "char_log", "needle": "Warm Up 9/11 Building Blocks of Matter Missing 0/2"},
+    {"kid": "char", "kind": "focus", "subject": "ELA", "name": "Membean vocab (week of 9/8)", "step": "Do a quick 10-minute vocab review", "date": "2026-09-15", "source": "char_log", "needle": "Membean 9/8-13 30/45"},
+    {"kid": "char", "kind": "focus", "subject": "Spanish", "name": "Regular-verbs quiz (Socrative)", "step": "Practice a few verb endings out loud", "date": "2026-09-09", "source": "char_log", "needle": "Socrative verbos 6/10"},
+
+    {"kid": "char", "kind": "pending", "subject": "ELA", "name": "\"There She Stands\" Analysis", "due": "2026-09-11", "date": "2026-09-15", "note": "waiting for a grade", "source": "char_log", "needle": "There She Stands Analysis --/10 due 9/11"},
+    {"kid": "char", "kind": "pending", "subject": "Spanish", "name": "ADL jugar", "due": "2026-09-09", "date": "2026-09-11", "note": "waiting for a grade (last seen 9/11)", "source": "char_log", "needle": "ADL jugar --/20 due 9/9"},
+
+    {"kid": "vic", "kind": "win", "subject": "Religion", "name": "Creation to Noah test", "score": "21/22", "date": "2026-09-14", "due": "2026-09-11", "source": "vic_log", "needle": "Creation to Noah - Test” 21/22"},
+    {"kid": "vic", "kind": "win", "subject": "Spanish", "name": "Los cognados: buscapalabras y párrafo", "score": "20/20", "date": "2026-09-15", "due": "2026-09-02", "source": "vic_log", "needle": "los cognados: buscapalabras y párrafo” 20/20"},
+    {"kid": "vic", "kind": "win", "subject": "Religion", "name": "Religion assignments", "score": "10/10 + 4/4", "date": "2026-09-09", "source": "vic_transcript", "needle": "Religion assignments fully scored (10/10, 4/4)"},
+
+    {"kid": "vic", "kind": "focus", "subject": "Social Studies", "name": "CLOZE paragraph (due 9/11)", "step": "Redo it together, one sentence at a time", "date": "2026-09-14", "source": "vic_log", "needle": "CLOZE paragraph due 09/11 = 0/5"},
+    {"kid": "vic", "kind": "focus", "subject": "Social Studies", "name": "Exit ticket (due 9/4)", "step": "Go over what exit tickets ask, in tiny steps", "date": "2026-09-10", "source": "vic_log", "needle": "P.S. S.S. Exit Ticket” 2/6"},
+
+    {"kid": "vic", "kind": "pending", "subject": "Religion", "name": "Noah's Ark reading + questions", "due": "2026-09-11", "date": "2026-09-15", "note": "not scored yet", "source": "vic_log", "needle": "Religion Noah’s Ark --/10 due 09/11"},
+    {"kid": "vic", "kind": "pending", "subject": "Math", "name": "Drill Set 1", "due": "2026-09-10", "date": "2026-09-15", "note": "not scored yet", "source": "vic_log", "needle": "Math Drill Set 1 --/18 due 09/10"},
+    {"kid": "vic", "kind": "pending", "subject": "Spanish", "name": "Cognados en clase", "due": "2026-09-02", "date": "2026-09-15", "note": "not scored yet", "source": "vic_log", "needle": "WL “cognados en clase” --/10 due 09/02"},
+
+    {"kid": "vic", "kind": "due", "subject": "Religion", "name": "Anatomy of a Covenant + handout + Seesaw", "due": "2026-09-15", "date": "2026-09-15", "source": "vic_log", "needle": "Religion Anatomy of a Covenant + handout + Seesaw tonight"},
+    {"kid": "vic", "kind": "due", "subject": "Spanish", "name": "Cognates classwork", "date": "2026-09-15", "source": "vic_log", "needle": "Spanish cognates CW"},
+    {"kid": "vic", "kind": "due", "subject": "Math", "name": "Green Sheet", "due": "2026-09-18", "date": "2026-09-15", "source": "vic_log", "needle": "Math Green Sheet due 9/18"},
+    {"kid": "vic", "kind": "due", "subject": "Math", "name": "Khan Academy practice", "due": "2026-09-23", "date": "2026-09-15", "source": "vic_log", "needle": "Khan due 9/23"},
+    {"kid": "vic", "kind": "due", "subject": "Math", "name": "IXL skills XCQ / VG6 / MLU", "date": "2026-09-15", "source": "vic_log", "needle": "IXL XCQ/VG6/MLU"},
+    {"kid": "vic", "kind": "due", "subject": "Social Studies", "name": "Study Ancient Greek geography + vocab", "date": "2026-09-15", "source": "vic_log", "needle": "SS study Greek geography+vocab"},
+    {"kid": "vic", "kind": "test", "subject": "Social Studies", "name": "Vocab quiz: Ancient Greek geography", "due": "2026-09-18", "date": "2026-09-15", "source": "vic_log", "needle": "SS vocab quiz Fri 9/18"},
+
+    {"kid": "char", "kind": "test", "subject": "HSPT", "name": "HSPT placement test at SJE", "due": "2026-11-17", "date": "2026-10-07", "source": "path_profile", "needle": "Tue Nov 17, 2026 at her school (SJE)"},
+    {"kid": "char", "kind": "event", "subject": "High school", "name": "Spalding Open House (10:30–2:30)", "due": "2026-10-25", "date": "2026-09-18", "source": "path_pipeline", "needle": "Spalding Open House | **Oct 25, 2026** 10:30 a.m.–2:30 p.m."}
+  ]
+}

@@ -1,0 +1,1599 @@
+{
+ "generated_at": "2026-10-10T13:21:54-04:00",
+ "today": "2026-10-10",
+ "kids": {
+  "char": {
+   "name": "Charlotte",
+   "nick": "Char",
+   "grade": "8th grade",
+   "tutor": "Char Tutor",
+   "checkins": [
+    {
+     "date": "2026-09-09",
+     "time": "7:02 PM",
+     "status": "ok",
+     "trigger": "schedule"
+    },
+    {
+     "date": "2026-09-10",
+     "time": "7:44 PM",
+     "status": "ok",
+     "trigger": "schedule"
+    },
+    {
+     "date": "2026-09-11",
+     "time": "7:29 PM",
+     "status": "ok",
+     "trigger": "schedule"
+    },
+    {
+     "date": "2026-09-12",
+     "time": "7:01 PM",
+     "status": "ok",
+     "trigger": "schedule"
+    },
+    {
+     "date": "2026-09-13",
+     "time": "7:18 PM",
+     "status": "ok",
+     "trigger": "schedule"
+    },
+    {
+     "date": "2026-09-14",
+     "time": "7:14 PM",
+     "status": "ok",
+     "trigger": "schedule"
+    },
+    {
+     "date": "2026-09-15",
+     "time": "7:14 PM",
+     "status": "ok",
+     "trigger": "schedule"
+    }
+   ],
+   "calendar": {
+    "2026-09-09": {
+     "run": true,
+     "report": "report"
+    },
+    "2026-09-10": {
+     "run": true,
+     "report": null
+    },
+    "2026-09-11": {
+     "run": true,
+     "report": "report"
+    },
+    "2026-09-12": {
+     "run": true,
+     "report": "portal-down"
+    },
+    "2026-09-13": {
+     "run": true,
+     "report": null
+    },
+    "2026-09-14": {
+     "run": true,
+     "report": "report"
+    },
+    "2026-09-15": {
+     "run": true,
+     "report": "report"
+    }
+   },
+   "best_streak": 7,
+   "streak_range": [
+    "2026-09-09",
+    "2026-09-15"
+   ],
+   "checkin_count": 7,
+   "report_count": 4,
+   "portal_down_days": [
+    "2026-09-12"
+   ],
+   "wins": [
+    {
+     "kid": "char",
+     "kind": "win",
+     "subject": "ELA",
+     "name": "Summer Work Presentation",
+     "score": "5/5",
+     "date": "2026-09-09",
+     "source": "char_transcript"
+    },
+    {
+     "kid": "char",
+     "kind": "win",
+     "subject": "Science",
+     "name": "IXL skill 6Q7",
+     "score": "10/10",
+     "date": "2026-09-14",
+     "due": "2026-09-10",
+     "source": "char_log"
+    },
+    {
+     "kid": "char",
+     "kind": "win",
+     "subject": "ELA",
+     "name": "Email Etiquette",
+     "score": "5/5",
+     "date": "2026-09-15",
+     "due": "2026-09-08",
+     "source": "char_log"
+    },
+    {
+     "kid": "char",
+     "kind": "win",
+     "subject": "Spanish",
+     "name": "Repaso",
+     "score": "20/20",
+     "date": "2026-09-15",
+     "source": "char_log"
+    }
+   ],
+   "focus": [
+    {
+     "kid": "char",
+     "kind": "focus",
+     "subject": "Science",
+     "name": "Exit ticket from 9/11",
+     "step": "Turn it in. It hasn't been handed in yet",
+     "date": "2026-09-15",
+     "source": "char_log"
+    },
+    {
+     "kid": "char",
+     "kind": "focus",
+     "subject": "Science",
+     "name": "Warm Up: Building Blocks of Matter (9/11)",
+     "step": "Turn it in. Her teacher asked for it",
+     "date": "2026-09-15",
+     "source": "char_log"
+    },
+    {
+     "kid": "char",
+     "kind": "focus",
+     "subject": "ELA",
+     "name": "Membean vocab (week of 9/8)",
+     "step": "Do a quick 10-minute vocab review",
+     "date": "2026-09-15",
+     "source": "char_log"
+    },
+    {
+     "kid": "char",
+     "kind": "focus",
+     "subject": "Spanish",
+     "name": "Regular-verbs quiz (Socrative)",
+     "step": "Practice a few verb endings out loud",
+     "date": "2026-09-09",
+     "source": "char_log"
+    }
+   ],
+   "pending": [
+    {
+     "kid": "char",
+     "kind": "pending",
+     "subject": "ELA",
+     "name": "\"There She Stands\" Analysis",
+     "due": "2026-09-11",
+     "date": "2026-09-15",
+     "note": "waiting for a grade",
+     "source": "char_log"
+    },
+    {
+     "kid": "char",
+     "kind": "pending",
+     "subject": "Spanish",
+     "name": "ADL jugar",
+     "due": "2026-09-09",
+     "date": "2026-09-11",
+     "note": "waiting for a grade (last seen 9/11)",
+     "source": "char_log"
+    }
+   ],
+   "upcoming": [
+    {
+     "kid": "char",
+     "kind": "event",
+     "subject": "High school",
+     "name": "Spalding Open House (10:30–2:30)",
+     "due": "2026-10-25",
+     "date": "2026-09-18",
+     "source": "path_pipeline"
+    },
+    {
+     "kid": "char",
+     "kind": "test",
+     "subject": "HSPT",
+     "name": "HSPT placement test at SJE",
+     "due": "2026-11-17",
+     "date": "2026-10-07",
+     "source": "path_profile"
+    }
+   ],
+   "last_known_list": [],
+   "subjects": [
+    {
+     "subject": "ELA",
+     "count": 4
+    },
+    {
+     "subject": "Science",
+     "count": 3
+    },
+    {
+     "subject": "Spanish",
+     "count": 3
+    },
+    {
+     "subject": "HSPT",
+     "count": 1
+    },
+    {
+     "subject": "Algebra 1",
+     "count": 0
+    },
+    {
+     "subject": "PE",
+     "count": 0
+    },
+    {
+     "subject": "Religion",
+     "count": 0
+    },
+    {
+     "subject": "Social Studies",
+     "count": 0
+    }
+   ],
+   "classes": {
+    "as_of": "2026-09-15",
+    "classes": [
+     {
+      "subject": "Religion",
+      "letter": "A+",
+      "pct": 100
+     },
+     {
+      "subject": "ELA",
+      "letter": "A",
+      "pct": 96
+     },
+     {
+      "subject": "Algebra 1",
+      "letter": "A",
+      "pct": 93
+     },
+     {
+      "subject": "Science",
+      "focus": true
+     },
+     {
+      "subject": "Social Studies",
+      "letter": "B+",
+      "pct": 89
+     },
+     {
+      "subject": "Spanish",
+      "letter": "B+",
+      "pct": 89
+     },
+     {
+      "subject": "PE",
+      "credit": true
+     }
+    ]
+   },
+   "attendance": {
+    "absences": 0,
+    "as_of": "2026-09-15"
+   },
+   "data_range": {
+    "first": "2026-09-09",
+    "last": "2026-09-15"
+   },
+   "days_since_last": 25
+  },
+  "vic": {
+   "name": "Victor",
+   "nick": "Vic",
+   "grade": "6th grade",
+   "tutor": "Vic Tutor",
+   "checkins": [
+    {
+     "date": "2026-09-09",
+     "time": "7:20 PM",
+     "status": "ok",
+     "trigger": "schedule"
+    },
+    {
+     "date": "2026-09-10",
+     "time": "7:25 PM",
+     "status": "ok",
+     "trigger": "schedule"
+    },
+    {
+     "date": "2026-09-11",
+     "time": "7:35 PM",
+     "status": "ok",
+     "trigger": "schedule"
+    },
+    {
+     "date": "2026-09-12",
+     "time": "7:10 PM",
+     "status": "ok",
+     "trigger": "schedule"
+    },
+    {
+     "date": "2026-09-13",
+     "time": "7:14 PM",
+     "status": "ok",
+     "trigger": "schedule"
+    },
+    {
+     "date": "2026-09-14",
+     "time": "7:38 PM",
+     "status": "ok",
+     "trigger": "schedule"
+    },
+    {
+     "date": "2026-09-15",
+     "time": "7:14 PM",
+     "status": "ok",
+     "trigger": "schedule"
+    }
+   ],
+   "calendar": {
+    "2026-09-09": {
+     "run": true,
+     "report": "report"
+    },
+    "2026-09-10": {
+     "run": true,
+     "report": "report"
+    },
+    "2026-09-11": {
+     "run": true,
+     "report": null
+    },
+    "2026-09-12": {
+     "run": true,
+     "report": null
+    },
+    "2026-09-13": {
+     "run": true,
+     "report": null
+    },
+    "2026-09-14": {
+     "run": true,
+     "report": "report"
+    },
+    "2026-09-15": {
+     "run": true,
+     "report": "report"
+    }
+   },
+   "best_streak": 7,
+   "streak_range": [
+    "2026-09-09",
+    "2026-09-15"
+   ],
+   "checkin_count": 7,
+   "report_count": 4,
+   "portal_down_days": [],
+   "wins": [
+    {
+     "kid": "vic",
+     "kind": "win",
+     "subject": "Religion",
+     "name": "Creation to Noah test",
+     "score": "21/22",
+     "date": "2026-09-14",
+     "due": "2026-09-11",
+     "source": "vic_log"
+    },
+    {
+     "kid": "vic",
+     "kind": "win",
+     "subject": "Spanish",
+     "name": "Los cognados: buscapalabras y párrafo",
+     "score": "20/20",
+     "date": "2026-09-15",
+     "due": "2026-09-02",
+     "source": "vic_log"
+    },
+    {
+     "kid": "vic",
+     "kind": "win",
+     "subject": "Religion",
+     "name": "Religion assignments",
+     "score": "10/10 + 4/4",
+     "date": "2026-09-09",
+     "source": "vic_transcript"
+    }
+   ],
+   "focus": [
+    {
+     "kid": "vic",
+     "kind": "focus",
+     "subject": "Social Studies",
+     "name": "CLOZE paragraph (due 9/11)",
+     "step": "Redo it together, one sentence at a time",
+     "date": "2026-09-14",
+     "source": "vic_log"
+    },
+    {
+     "kid": "vic",
+     "kind": "focus",
+     "subject": "Social Studies",
+     "name": "Exit ticket (due 9/4)",
+     "step": "Go over what exit tickets ask, in tiny steps",
+     "date": "2026-09-10",
+     "source": "vic_log"
+    }
+   ],
+   "pending": [
+    {
+     "kid": "vic",
+     "kind": "pending",
+     "subject": "Religion",
+     "name": "Noah's Ark reading + questions",
+     "due": "2026-09-11",
+     "date": "2026-09-15",
+     "note": "not scored yet",
+     "source": "vic_log"
+    },
+    {
+     "kid": "vic",
+     "kind": "pending",
+     "subject": "Math",
+     "name": "Drill Set 1",
+     "due": "2026-09-10",
+     "date": "2026-09-15",
+     "note": "not scored yet",
+     "source": "vic_log"
+    },
+    {
+     "kid": "vic",
+     "kind": "pending",
+     "subject": "Spanish",
+     "name": "Cognados en clase",
+     "due": "2026-09-02",
+     "date": "2026-09-15",
+     "note": "not scored yet",
+     "source": "vic_log"
+    }
+   ],
+   "upcoming": [],
+   "last_known_list": [
+    {
+     "kid": "vic",
+     "kind": "due",
+     "subject": "Religion",
+     "name": "Anatomy of a Covenant + handout + Seesaw",
+     "due": "2026-09-15",
+     "date": "2026-09-15",
+     "source": "vic_log"
+    },
+    {
+     "kid": "vic",
+     "kind": "due",
+     "subject": "Spanish",
+     "name": "Cognates classwork",
+     "date": "2026-09-15",
+     "source": "vic_log"
+    },
+    {
+     "kid": "vic",
+     "kind": "due",
+     "subject": "Math",
+     "name": "IXL skills XCQ / VG6 / MLU",
+     "date": "2026-09-15",
+     "source": "vic_log"
+    },
+    {
+     "kid": "vic",
+     "kind": "due",
+     "subject": "Social Studies",
+     "name": "Study Ancient Greek geography + vocab",
+     "date": "2026-09-15",
+     "source": "vic_log"
+    },
+    {
+     "kid": "vic",
+     "kind": "due",
+     "subject": "Math",
+     "name": "Green Sheet",
+     "due": "2026-09-18",
+     "date": "2026-09-15",
+     "source": "vic_log"
+    },
+    {
+     "kid": "vic",
+     "kind": "test",
+     "subject": "Social Studies",
+     "name": "Vocab quiz: Ancient Greek geography",
+     "due": "2026-09-18",
+     "date": "2026-09-15",
+     "source": "vic_log"
+    },
+    {
+     "kid": "vic",
+     "kind": "due",
+     "subject": "Math",
+     "name": "Khan Academy practice",
+     "due": "2026-09-23",
+     "date": "2026-09-15",
+     "source": "vic_log"
+    }
+   ],
+   "subjects": [
+    {
+     "subject": "Math",
+     "count": 4
+    },
+    {
+     "subject": "Religion",
+     "count": 4
+    },
+    {
+     "subject": "Social Studies",
+     "count": 4
+    },
+    {
+     "subject": "Spanish",
+     "count": 3
+    },
+    {
+     "subject": "PE",
+     "count": 0
+    },
+    {
+     "subject": "Science",
+     "count": 0
+    }
+   ],
+   "classes": {
+    "as_of": "2026-09-15",
+    "classes": [
+     {
+      "subject": "Social Studies",
+      "focus": true
+     },
+     {
+      "subject": "Religion",
+      "letter": "A+",
+      "pct": 97
+     },
+     {
+      "subject": "Math",
+      "letter": "A+",
+      "pct": 100
+     },
+     {
+      "subject": "Science",
+      "letter": "A+",
+      "pct": 100
+     },
+     {
+      "subject": "Spanish",
+      "credit": true
+     },
+     {
+      "subject": "PE",
+      "credit": true
+     }
+    ]
+   },
+   "attendance": {
+    "absences": 1,
+    "as_of": "2026-09-15"
+   },
+   "data_range": {
+    "first": "2026-09-09",
+    "last": "2026-09-15"
+   },
+   "days_since_last": 25
+  }
+ },
+ "hspt": {
+  "sheets": [
+   {
+    "day": 1,
+    "date": "2026-09-18",
+    "date_inferred": true,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy",
+      "questions": 1
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 9,
+    "pdf": true
+   },
+   {
+    "day": 2,
+    "date": "2026-09-19",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Analogies",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 3,
+    "date": "2026-09-20",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Antonyms",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 4,
+    "date": "2026-09-21",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Synonyms",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 5,
+    "date": "2026-09-22",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Analogies",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 6,
+    "date": "2026-09-23",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Synonyms / Antonyms",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 7,
+    "date": "2026-09-24",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Analogies / Classification",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 8,
+    "date": "2026-09-25",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Synonyms / Antonyms",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 9,
+    "date": "2026-09-26",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Analogies / Odd One Out",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 10,
+    "date": "2026-09-27",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Synonyms / Antonyms",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 11,
+    "date": "2026-09-28",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Analogies / Classification",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 12,
+    "date": "2026-09-29",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Synonyms / Antonyms",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 13,
+    "date": "2026-09-30",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Analogies / Classification",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 14,
+    "date": "2026-10-01",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Synonyms / Antonyms",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 15,
+    "date": "2026-10-02",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Analogies / Odd One Out",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 16,
+    "date": "2026-10-03",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Synonyms / Antonyms",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 17,
+    "date": "2026-10-04",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Analogies / Classification",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Easy–Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 2
+     }
+    ],
+    "questions": 11,
+    "pdf": true
+   },
+   {
+    "day": 18,
+    "date": "2026-10-05",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Logic / Antonyms",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium–Hard",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 3
+     }
+    ],
+    "questions": 12,
+    "pdf": true
+   },
+   {
+    "day": 19,
+    "date": "2026-10-06",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Analogy / Synonym",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium–Hard",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 3
+     }
+    ],
+    "questions": 12,
+    "pdf": true
+   },
+   {
+    "day": 20,
+    "date": "2026-10-07",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Analogy / Logic",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 3
+     }
+    ],
+    "questions": 12,
+    "pdf": true
+   },
+   {
+    "day": 21,
+    "date": "2026-10-08",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Synonym / Analogy / Logic",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 3
+     }
+    ],
+    "questions": 12,
+    "pdf": true
+   },
+   {
+    "day": 22,
+    "date": "2026-10-09",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Antonym / Analogy / Classification",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 3
+     }
+    ],
+    "questions": 12,
+    "pdf": true
+   },
+   {
+    "day": 23,
+    "date": "2026-10-10",
+    "date_inferred": false,
+    "sections": [
+     {
+      "area": "Verbal",
+      "label": "Verbal — Synonym / Analogy / Logic",
+      "difficulty": "Medium",
+      "questions": 3
+     },
+     {
+      "area": "Quantitative",
+      "label": "Quantitative",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Reading",
+      "label": "Reading",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Mathematics",
+      "label": "Mathematics",
+      "difficulty": "Medium",
+      "questions": 2
+     },
+     {
+      "area": "Language",
+      "label": "Language",
+      "difficulty": "Medium",
+      "questions": 3
+     }
+    ],
+    "questions": 12,
+    "pdf": true
+   }
+  ],
+  "area_questions": {
+   "Verbal": 49,
+   "Quantitative": 65,
+   "Reading": 45,
+   "Mathematics": 46,
+   "Language": 52
+  },
+  "total_questions": 257,
+  "scores": [],
+  "score_files_found": [],
+  "daily_streak": 23,
+  "streak_range": [
+   "2026-09-18",
+   "2026-10-10"
+  ],
+  "test_day": "2026-11-17",
+  "days_to_test": 38
+ },
+ "badges": {
+  "char": [
+   {
+    "icon": "🔥",
+    "title": "7-night streak",
+    "why": "Tutor check-ins every night, Sep 9 to Sep 15"
+   },
+   {
+    "icon": "💯",
+    "title": "4 perfect scores",
+    "why": "Summer Work Presentation, IXL skill 6Q7, Email Etiquette, Repaso"
+   },
+   {
+    "icon": "🅰️",
+    "title": "A-Team: 3 classes",
+    "why": "Religion, ELA, Algebra 1 (as of Sep 15)"
+   },
+   {
+    "icon": "🌞",
+    "title": "Perfect attendance",
+    "why": "No absences as of Sep 15"
+   },
+   {
+    "icon": "🧭",
+    "title": "23 HSPT practice days",
+    "why": "Path made a fresh sheet every day, Sep 18 to Oct 10"
+   }
+  ],
+  "vic": [
+   {
+    "icon": "🔥",
+    "title": "7-night streak",
+    "why": "Tutor check-ins every night, Sep 9 to Sep 15"
+   },
+   {
+    "icon": "💯",
+    "title": "2 perfect scores",
+    "why": "Los cognados: buscapalabras y párrafo, Religion assignments"
+   },
+   {
+    "icon": "🅰️",
+    "title": "A-Team: 3 classes",
+    "why": "Religion, Math, Science (as of Sep 15)"
+   },
+   {
+    "icon": "🏆",
+    "title": "Test champ",
+    "why": "Creation to Noah test: 21/22"
+   }
+  ]
+ },
+ "sources": [
+  {
+   "label": "Char Tutor memory log + routine runs + visible messages (counts only)",
+   "path": "/home/box/agent-data/agents/ff5dfcd2-09b9-49dd-952f-14893da73ab0/"
+  },
+  {
+   "label": "Vic Tutor memory log + routine runs + visible messages (counts only)",
+   "path": "/home/box/agent-data/agents/7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1/"
+  },
+  {
+   "label": "Path profile (HSPT test day)",
+   "path": "/home/box/agent-data/agents/fd400f67-24e0-40fd-9d9f-fcdcb2969805/profile.json"
+  },
+  {
+   "label": "Path HSPT drill sheets",
+   "path": "/workspace/hspt/hspt-day*.html, /workspace/hspt/worksheets/"
+  },
+  {
+   "label": "Path scholarship pipeline (Open House date)",
+   "path": "/workspace/hspt/scholarships/pipeline.md"
+  }
+ ],
+ "gaps": [
+  "Char: the tutor's notes on this computer end Sep 15 (25 days ago). Nothing after that is shown.",
+  "Vic: the tutor's notes on this computer end Sep 15 (25 days ago). Nothing after that is shown.",
+  "Vic: no upcoming tests or assignments are logged.",
+  "Char: her OneNote homework list was never saved to the tutor's notes, so there are no assignment due dates for her.",
+  "HSPT: practice sheets are saved, but no scores are logged anywhere on this computer.",
+  "PowerSchool: no separate grade-pull files on this computer. Grades come from the tutors' own notes."
+ ],
+ "warnings": []
+}

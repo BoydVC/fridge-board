@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light">
+<title>Boyd Fridge Board</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <h1 class="magnets" id="title" aria-label="Boyd Fridge Board"></h1>
+    <nav class="tabs" id="tabs">
+      <a href="#home" data-tab="home">🏠 Home</a>
+      <a href="#char" data-tab="char" class="t-char">Char</a>
+      <a href="#vic" data-tab="vic" class="t-vic">Vic</a>
+      <a href="#hspt" data-tab="hspt" class="t-hspt">🧭 HSPT</a>
+      <a href="#grownups" data-tab="grownups">☕ Grown-ups</a>
+    </nav>
+    <div class="clock"><div id="clock-time"></div><div id="clock-date"></div></div>
+  </header>
+  <div id="delta" class="delta" hidden></div>
+  <div id="weekglance" class="weekglance" hidden></div>
+  <div id="slideprog" class="slideprog" hidden><i></i></div>
+  <main id="view" aria-live="polite"><div class="loading">Loading the fridge…</div></main>
+  <footer class="foot" id="foot"></footer>
+</div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<div id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
