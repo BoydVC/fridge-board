@@ -37,7 +37,7 @@ try {
   check("badge tap shows a celebration toast", /streak|perfect|A-Team|attendance|HSPT/.test(t1), t1);
   await ev(`document.querySelector('.hi5[data-kid=vic]').click()`); await sleep(400);
   const t2 = await ev(`document.getElementById('toast').textContent`);
-  check("high-five toast", /High five, Vic/.test(t2), t2);
+  check("high-five toast", /High five, Sam/.test(t2), t2);
   check("high-five counter saved locally", (await ev(`localStorage.getItem('fb:hi5:vic')`)) === "1");
   for (const tab of ["char", "vic", "hspt", "grownups", "home"]) {
     await ev(`location.hash='#${tab}'`); await sleep(500);

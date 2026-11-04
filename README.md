@@ -1,6 +1,6 @@
 # Boyd Fridge Board 🧲
 
-A warm, kid-friendly progress board for **Char** (8th grade) and **Vic** (6th grade), sized for a kitchen tablet
+A warm, kid-friendly progress board for **Alex** (8th grade) and **Sam** (6th grade), sized for a kitchen tablet
 (1280×800 landscape). It's built only from what the family's tutor bots have already saved on this computer.
 
 - **Live app:** http://127.0.0.1:4343 (local only)
@@ -12,8 +12,8 @@ A warm, kid-friendly progress board for **Char** (8th grade) and **Vic** (6th gr
 | Tab | What it shows |
 |---|---|
 | 🏠 Home | Week-at-a-glance + both kids side by side: animated streak flames, logged check-in week (★ / ☁), top wins, "Next tiny steps", coming up, HSPT countdown. Badge icons in each kid header. Optional "since last open" strip. |
-| Char / Vic | Check-in calendar (Sep–Oct), class snapshot (letters only; low classes show as **🌱 Focus area**), subjects in the tutor notes, every badge, wins, next tiny steps, work waiting for a grade, coming up, and Vic's last saved homework list (marked as past). |
-| 🧭 HSPT | Path's prep for Char: countdown to **Tue Nov 17, 2026 (SJE)**, a "trail" of every practice sheet Path has made plus the days left, questions per HSPT area, difficulty of the latest sheets, key dates (Spalding Open House Oct 25), and the practice-score area. It's empty for now because no scores are logged. |
+| Alex / Sam | Check-in calendar (Sep–Oct), class snapshot (letters only; low classes show as **🌱 Focus area**), subjects in the tutor notes, every badge, wins, next tiny steps, work waiting for a grade, coming up, and Sam's last saved homework list (marked as past). |
+| 🧭 HSPT | Path's prep for Alex: countdown to **Tue Nov 17, 2026 (Northside Academy)**, a "trail" of every practice sheet Path has made plus the days left, questions per HSPT area, difficulty of the latest sheets, key dates (Spalding Open House Oct 25), and the practice-score area. It's empty for now because no scores are logged. |
 | ☕ Grown-ups | Sources, gaps, letter grades with percentages for classes that aren't focus areas, attendance, and each kid's check-in log with outcomes. |
 
 Fun bits: tap a badge for confetti and the reason it was earned. Tap a kid's avatar to give a 🙌 high five (the count is kept
@@ -22,13 +22,13 @@ every 40 s for an always-on screen. The screen dims from 9 PM to 6 AM.
 
 ## What's new (Sat Oct 10 afternoon remaster)
 
-* **Warmer fridge aesthetic** for 1280×800 kitchen tablets: soft door frame, magnet letter tiles, clearer Char/Vic kid cards, animated streak 🔥 flames, richer confetti (rectangles + circles + triangles).
-* **Week-at-a-glance strip** across the top: every logged check-in night for both kids (Char / Vic / both), with ★ / ☁ marks from the tutor notes only.
+* **Warmer fridge aesthetic** for 1280×800 kitchen tablets: soft door frame, magnet letter tiles, clearer Alex/Vic kid cards, animated streak 🔥 flames, richer confetti (rectangles + circles + triangles).
+* **Week-at-a-glance strip** across the top: every logged check-in night for both kids (Alex / Sam / both), with ★ / ☁ marks from the tutor notes only.
 * **"Since last open" delta** (device-local): surfaces new check-ins, wins, or HSPT sheets since the last visit on this tablet — never invents grades.
 * **Badge shelf remaster** on kid tabs: magnets on a wooden shelf rail; tap still confettis the reason.
 * **HSPT trail polish**: filling path behind the stones, bobbing finish flag, smoother countdown ring.
 * **Slideshow polish**: progress bar under the header while the 40 s kiosk rotation runs.
-* **Print-friendly CSS** (`@media print`) so a parent can print Home / Char / Vic without chrome.
+* **Print-friendly CSS** (`@media print`) so a parent can print Home / Alex / Sam without chrome.
 * Collector re-run against live tutor + Path sources (copy-to-temp SQLite pattern unchanged). Offline `dist/fridge-board-snapshot.html` via `build_snapshot.py` or `export_static.py`. Fresh `screenshots/00-best-home.png`.
 
 ## Rules it follows
@@ -48,10 +48,10 @@ every 40 s for an always-on screen. The screen dims from 9 PM to 6 AM.
 
 | Source | Used for |
 |---|---|
-| `/home/box/agent-data/agents/ff5dfcd2-…/memory/log/2026-09.md` (Char Tutor) | grade snapshots, newly graded items, attendance, report days |
+| `/home/box/agent-data/agents/ff5dfcd2-…/memory/log/2026-09.md` (Alex Tutor) | grade snapshots, newly graded items, attendance, report days |
 | `…/ff5dfcd2-…/automations/char-weeknight-homework-check-in/runs.json` | check-in nights + times |
 | `…/ff5dfcd2-…/store.db` (copied, visible messages only) | verifying a couple of items (e.g. Summer Work Presentation 5/5) |
-| `/home/box/agent-data/agents/7e4990fe-…/` (Vic Tutor): same three | same, plus Vic's OneNote homework/test list from Sep 15 |
+| `/home/box/agent-data/agents/7e4990fe-…/` (Sam Tutor): same three | same, plus Sam's OneNote homework/test list from Sep 15 |
 | `/home/box/agent-data/agents/fd400f67-…/profile.json` (Path) | HSPT test day |
 | `/workspace/hspt/hspt-day*.html`, `/workspace/hspt/worksheets/` | the practice sheets (currently 23) (date, areas, difficulty, question count) |
 | `/workspace/hspt/scholarships/pipeline.md` | Spalding Open House date |
@@ -59,8 +59,8 @@ every 40 s for an always-on screen. The screen dims from 9 PM to 6 AM.
 ## Known gaps (shown on the Grown-ups tab)
 
 - The tutor notes on this computer run **Sep 9 to Sep 15, 2026** only. Nothing later is shown, and the board says so.
-- Char's OneNote homework list was never saved to her tutor's notes, so she has no assignment due dates.
-- Vic's last saved homework and test list is from Sep 15, so all of it is past. "Coming up" shows an empty state for him.
+- Alex's OneNote homework list was never saved to her tutor's notes, so she has no assignment due dates.
+- Sam's last saved homework and test list is from Sep 15, so all of it is past. "Coming up" shows an empty state for him.
 - No HSPT practice scores are logged anywhere. The board counts sheets *made*, not sheets completed.
 - There are no separate PowerSchool grade-pull files on the box. Grades come from the tutors' own notes.
 - Day 1's HSPT sheet has no date printed on it, so it's shown as Sep 18 (the day before Day 2) and marked as inferred.
