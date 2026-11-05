@@ -27,9 +27,9 @@ HSPT = os.environ.get("FB_HSPT_ROOT", "/workspace/hspt")
 
 KIDS = {
     "char": {"agent": "ff5dfcd2-09b9-49dd-952f-14893da73ab0", "routine": "char-weeknight-homework-check-in",
-             "name": "Charlotte", "nick": "Char", "grade": "8th grade", "tutor": "Char Tutor", "who": "Charlotte"},
+             "name": "Alex", "nick": "Alex", "grade": "8th grade", "tutor": "Alex Tutor", "who": "Alex"},
     "vic": {"agent": "7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1", "routine": "vic-weeknight-homework-check-in",
-            "name": "Victor", "nick": "Vic", "grade": "6th grade", "tutor": "Vic Tutor", "who": "Vic"},
+            "name": "Samuel", "nick": "Sam", "grade": "6th grade", "tutor": "Sam Tutor", "who": "Sam"},
 }
 PATH_AGENT = "fd400f67-24e0-40fd-9d9f-fcdcb2969805"
 
@@ -142,7 +142,7 @@ def class_snapshot(lines, who):
 def report_days(lines, who):
     days = {}
     for logged, body in lines:
-        m = re.match(r"(\d{4}-\d\d-\d\d) (Charlotte|Vic)\b(.*)", body)
+        m = re.match(r"(\d{4}-\d\d-\d\d) (Alex|Sam)\b(.*)", body)
         if not m or m.group(2) != who:
             continue
         d, rest = m.group(1), m.group(3)
@@ -332,8 +332,8 @@ def main():
         "hspt": hspt,
         "badges": badges,
         "sources": [
-            {"label": "Char Tutor memory log + routine runs + visible messages (counts only)", "path": f"{AG}/{KIDS['char']['agent']}/"},
-            {"label": "Vic Tutor memory log + routine runs + visible messages (counts only)", "path": f"{AG}/{KIDS['vic']['agent']}/"},
+            {"label": "Alex Tutor memory log + routine runs + visible messages (counts only)", "path": f"{AG}/{KIDS['char']['agent']}/"},
+            {"label": "Sam Tutor memory log + routine runs + visible messages (counts only)", "path": f"{AG}/{KIDS['vic']['agent']}/"},
             {"label": "Path profile (HSPT test day)", "path": f"{AG}/{PATH_AGENT}/profile.json"},
             {"label": "Path HSPT drill sheets", "path": f"{HSPT}/hspt-day*.html, {HSPT}/worksheets/"},
             {"label": "Path scholarship pipeline (Open House date)", "path": f"{HSPT}/scholarships/pipeline.md"},
@@ -386,7 +386,7 @@ def build_gaps(kids, hspt, today):
         if not k["upcoming"]:
             g.append(f"{k['nick']}: no upcoming tests or assignments are logged.")
     if not kids["char"]["last_known_list"]:
-        g.append("Char: her OneNote homework list was never saved to the tutor's notes, so there are no assignment due dates for her.")
+        g.append("Alex: her OneNote homework list was never saved to the tutor's notes, so there are no assignment due dates for her.")
     if not hspt["scores"]:
         g.append("HSPT: practice sheets are saved, but no scores are logged anywhere on this computer.")
     g.append("PowerSchool: no separate grade-pull files on this computer. Grades come from the tutors' own notes.")

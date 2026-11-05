@@ -33,7 +33,7 @@
     {"kid": "vic", "kind": "due", "subject": "Social Studies", "name": "Study Ancient Greek geography + vocab", "date": "2026-09-15", "source": "vic_log", "needle": "SS study Greek geography+vocab"},
     {"kid": "vic", "kind": "test", "subject": "Social Studies", "name": "Vocab quiz: Ancient Greek geography", "due": "2026-09-18", "date": "2026-09-15", "source": "vic_log", "needle": "SS vocab quiz Fri 9/18"},
 
-    {"kid": "char", "kind": "test", "subject": "HSPT", "name": "HSPT placement test at SJE", "due": "2026-11-17", "date": "2026-10-07", "source": "path_profile", "needle": "Tue Nov 17, 2026 at her school (SJE)"},
-    {"kid": "char", "kind": "event", "subject": "High school", "name": "Spalding Open House (10:30–2:30)", "due": "2026-10-25", "date": "2026-09-18", "source": "path_pipeline", "needle": "Spalding Open House | **Oct 25, 2026** 10:30 a.m.–2:30 p.m."}
+    {"kid": "char", "kind": "test", "subject": "HSPT", "name": "HSPT placement test at Northside Academy", "due": "2026-11-17", "date": "2026-10-07", "source": "path_profile", "needle": "Tue Nov 17, 2026 at her school (Northside Academy)"},
+    {"kid": "char", "kind": "event", "subject": "High school", "name": "Westbrook Prep Open House (10:30–2:30)", "due": "2026-10-25", "date": "2026-09-18", "source": "path_pipeline", "needle": "Westbrook Prep Open House | **Oct 25, 2026** 10:30 a.m.–2:30 p.m."}
   ]
 }

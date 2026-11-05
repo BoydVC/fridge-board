@@ -3,10 +3,10 @@
  "today": "2026-10-10",
  "kids": {
   "char": {
-   "name": "Charlotte",
-   "nick": "Char",
+   "name": "Alex",
+   "nick": "Alex",
    "grade": "8th grade",
-   "tutor": "Char Tutor",
+   "tutor": "Alex Tutor",
    "checkins": [
     {
      "date": "2026-09-09",
@@ -196,7 +196,7 @@
      "kid": "char",
      "kind": "event",
      "subject": "High school",
-     "name": "Spalding Open House (10:30–2:30)",
+     "name": "Westbrook Prep Open House (10:30–2:30)",
      "due": "2026-10-25",
      "date": "2026-09-18",
      "source": "path_pipeline"
@@ -205,7 +205,7 @@
      "kid": "char",
      "kind": "test",
      "subject": "HSPT",
-     "name": "HSPT placement test at SJE",
+     "name": "HSPT placement test at Northside Academy",
      "due": "2026-11-17",
      "date": "2026-10-07",
      "source": "path_profile"
@@ -295,10 +295,10 @@
    "days_since_last": 25
   },
   "vic": {
-   "name": "Victor",
-   "nick": "Vic",
+   "name": "Samuel",
+   "nick": "Sam",
    "grade": "6th grade",
-   "tutor": "Vic Tutor",
+   "tutor": "Sam Tutor",
    "checkins": [
     {
      "date": "2026-09-09",
@@ -1567,11 +1567,11 @@
  },
  "sources": [
   {
-   "label": "Char Tutor memory log + routine runs + visible messages (counts only)",
+   "label": "Alex Tutor memory log + routine runs + visible messages (counts only)",
    "path": "/home/box/agent-data/agents/ff5dfcd2-09b9-49dd-952f-14893da73ab0/"
   },
   {
-   "label": "Vic Tutor memory log + routine runs + visible messages (counts only)",
+   "label": "Sam Tutor memory log + routine runs + visible messages (counts only)",
    "path": "/home/box/agent-data/agents/7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1/"
   },
   {
@@ -1588,10 +1588,10 @@
   }
  ],
  "gaps": [
-  "Char: the tutor's notes on this computer end Sep 15 (25 days ago). Nothing after that is shown.",
-  "Vic: the tutor's notes on this computer end Sep 15 (25 days ago). Nothing after that is shown.",
-  "Vic: no upcoming tests or assignments are logged.",
-  "Char: her OneNote homework list was never saved to the tutor's notes, so there are no assignment due dates for her.",
+  "Alex: the tutor's notes on this computer end Sep 15 (25 days ago). Nothing after that is shown.",
+  "Sam: the tutor's notes on this computer end Sep 15 (25 days ago). Nothing after that is shown.",
+  "Sam: no upcoming tests or assignments are logged.",
+  "Alex: her OneNote homework list was never saved to the tutor's notes, so there are no assignment due dates for her.",
   "HSPT: practice sheets are saved, but no scores are logged anywhere on this computer.",
   "PowerSchool: no separate grade-pull files on this computer. Grades come from the tutors' own notes."
  ],

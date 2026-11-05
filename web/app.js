@@ -146,7 +146,7 @@
       return '<div class="' + cls + '" title="' + fmtDow(d) + '"><div class="dn">' + DOW[dd.getDay()].slice(0, 2) + '</div><div class="dd">' + dd.getDate() + '</div><div class="mk">' + mk + "</div></div>";
     }).join("");
     el.innerHTML = '<div class="wl">Week at<br>a glance</div><div class="wdays">' + cells + "</div>" +
-      '<div class="small muted" style="grid-column:1/-1;margin:0">💜 Char · 🧡 Vic · ★ grade report · ☁ portal down · logged nights only (tutor notes)</div>';
+      '<div class="small muted" style="grid-column:1/-1;margin:0">💜 Alex · 🧡 Sam · ★ grade report · ☁ portal down · logged nights only (tutor notes)</div>';
     el.hidden = false;
   }
 
@@ -168,15 +168,15 @@
     store("lastFP", cur);
     store("lastOpen", new Date().toISOString());
     if (!prev) {
-      el.innerHTML = '<span class="tag">Welcome back</span><span>Fridge board ready · Char ' + cur.charCI + " check-ins · Vic " + cur.vicCI + " · " + cur.sheets + " HSPT sheets</span>";
+      el.innerHTML = '<span class="tag">Welcome back</span><span>Fridge board ready · Alex ' + cur.charCI + " check-ins · Sam " + cur.vicCI + " · " + cur.sheets + " HSPT sheets</span>";
       el.hidden = false;
       return;
     }
     var bits = [];
-    if (cur.charWins > prev.charWins) bits.push("+" + (cur.charWins - prev.charWins) + " Char win" + (cur.charWins - prev.charWins === 1 ? "" : "s"));
-    if (cur.vicWins > prev.vicWins) bits.push("+" + (cur.vicWins - prev.vicWins) + " Vic win" + (cur.vicWins - prev.vicWins === 1 ? "" : "s"));
-    if (cur.charCI > prev.charCI) bits.push("+" + (cur.charCI - prev.charCI) + " Char check-in" + (cur.charCI - prev.charCI === 1 ? "" : "s"));
-    if (cur.vicCI > prev.vicCI) bits.push("+" + (cur.vicCI - prev.vicCI) + " Vic check-in" + (cur.vicCI - prev.vicCI === 1 ? "" : "s"));
+    if (cur.charWins > prev.charWins) bits.push("+" + (cur.charWins - prev.charWins) + " Alex win" + (cur.charWins - prev.charWins === 1 ? "" : "s"));
+    if (cur.vicWins > prev.vicWins) bits.push("+" + (cur.vicWins - prev.vicWins) + " Sam win" + (cur.vicWins - prev.vicWins === 1 ? "" : "s"));
+    if (cur.charCI > prev.charCI) bits.push("+" + (cur.charCI - prev.charCI) + " Alex check-in" + (cur.charCI - prev.charCI === 1 ? "" : "s"));
+    if (cur.vicCI > prev.vicCI) bits.push("+" + (cur.vicCI - prev.vicCI) + " Sam check-in" + (cur.vicCI - prev.vicCI === 1 ? "" : "s"));
     if (cur.sheets > prev.sheets) bits.push("+" + (cur.sheets - prev.sheets) + " HSPT sheet" + (cur.sheets - prev.sheets === 1 ? "" : "s"));
     if (!bits.length) {
       el.innerHTML = '<span class="tag">Since last open</span><span>No new check-ins or wins since then · last board data ' + esc(fmt(D.kids.char.data_range.last)) + "</span>";
@@ -274,7 +274,7 @@
     var frac = n != null ? Math.min(1, Math.max(0, 1 - n / total)) : 0, C = 2 * Math.PI * 100;
     var ring = '<div class="ring"><svg width="230" height="230"><circle cx="115" cy="115" r="100" fill="none" stroke="#e2f1ee" stroke-width="18"/>' +
       '<circle cx="115" cy="115" r="100" fill="none" stroke="#1f9e8f" stroke-width="18" stroke-linecap="round" stroke-dasharray="' + (C * frac) + " " + C + '"/></svg>' +
-      '<div class="in"><div class="n">' + (n != null && n >= 0 ? n : "—") + '</div><div class="l">days to go</div><div class="small muted" style="margin-top:4px">' + (h.test_day ? fmtDow(h.test_day) + " · at SJE" : "") + "</div></div></div>";
+      '<div class="in"><div class="n">' + (n != null && n >= 0 ? n : "—") + '</div><div class="l">days to go</div><div class="small muted" style="margin-top:4px">' + (h.test_day ? fmtDow(h.test_day) + " · at Northside Academy" : "") + "</div></div></div>";
     var stones = h.sheets.map(function (s) {
       return '<div class="stone done" title="Day ' + s.day + " · " + fmt(s.date) + (s.date_inferred ? " (date inferred)" : "") + " · " + s.questions + ' questions">' + s.day + "</div>";
     }).join("");
@@ -297,7 +297,7 @@
       '<div class="card"><h3>📝 Practice scores</h3>' + (h.scores.length ? "" : empty("✏️", "No scores saved yet. When a sheet gets graded with Path, the score will show up here.")) + "</div>" +
       '<div class="card"><h3>📅 Key dates</h3><ul class="list">' + openHouse.map(function (u) {
         return '<li><span class="ic">🏫</span><span class="tx"><b>' + esc(u.name) + '</b><span class="meta">' + fmtDow(u.due) + "</span></span></li>";
-      }).join("") + (h.test_day ? '<li><span class="ic">🏁</span><span class="tx"><b>HSPT test day at SJE</b><span class="meta">' + fmtDow(h.test_day) + "</span></span></li>" : "") + "</ul></div></div>" +
+      }).join("") + (h.test_day ? '<li><span class="ic">🏁</span><span class="tx"><b>HSPT test day at Northside Academy</b><span class="meta">' + fmtDow(h.test_day) + "</span></span></li>" : "") + "</ul></div></div>" +
       '<div class="stack"><div class="card"><h3>👣 The trail to test day <span class="pill hspt">' + h.sheets.length + " sheets ready · " + h.daily_streak + "-day run</span></h3>" +
       '<div class="trail" style="--trail-pct:' + trailPct + '%">' + stones + todo + flag + '</div><div class="small muted" style="margin-top:8px">Teal stones = practice sheets Path has made (' + fmt(h.streak_range && h.streak_range[0]) + " – " + fmt(h.streak_range && h.streak_range[1]) + "). Dashed stones = days left before the test. The path fills as sheets appear.</div></div>" +
       '<div class="row2"><div class="card"><h3>🧩 Questions by HSPT area <span class="pill">' + h.total_questions + " total</span></h3>" + bars + "</div>" +
@@ -322,13 +322,13 @@
     };
     var att = function (kid) { var a = D.kids[kid].attendance; return a ? a.absences + " absence" + (a.absences === 1 ? "" : "s") + " as of " + fmt(a.as_of) : "not logged"; };
     return '<div class="gu"><div class="stack"><div class="card"><h3>☕ For grown-ups</h3><p class="small" style="margin-top:0">This board is built only from what the tutor bots already saved on this computer. It runs locally and never sends anything anywhere. Low grades show up as <b>focus areas</b> with a next step, never as a score.</p>' +
-      '<p class="small"><b>Char classes:</b> ' + cls("char") + "<br><b>Attendance:</b> " + att("char") + '</p><p class="small"><b>Vic classes:</b> ' + cls("vic") + "<br><b>Attendance:</b> " + att("vic") + "</p></div>" +
+      '<p class="small"><b>Alex classes:</b> ' + cls("char") + "<br><b>Attendance:</b> " + att("char") + '</p><p class="small"><b>Sam classes:</b> ' + cls("vic") + "<br><b>Attendance:</b> " + att("vic") + "</p></div>" +
       '<div class="card"><h3>🕳️ Gaps (what\'s missing)</h3><ul class="small gaps">' + D.gaps.map(function (g) { return "<li>" + esc(g) + "</li>"; }).join("") + "</ul>" +
       (D.warnings.length ? '<h3 style="margin-top:12px">⚠️ Collector warnings</h3><ul class="small">' + D.warnings.map(function (w) { return "<li>" + esc(w) + "</li>"; }).join("") + "</ul>" : "") + "</div>" +
       '<div class="card"><h3>📂 Sources (read-only)</h3><table>' + D.sources.map(function (s) { return "<tr><td>" + esc(s.label) + "</td><td><code>" + esc(s.path) + "</code></td></tr>"; }).join("") + "</table>" +
       '<p class="small muted">Data collected ' + esc(D.generated_at.replace("T", " ").slice(0, 16)) + " ET." + (SNAP ? " This is an offline snapshot." : ' <button class="linkbtn" id="refresh">Refresh now</button>') + "</p></div></div>" +
-      '<div class="stack"><div class="card"><h3>Char: check-in log</h3><table><tr><th>Day</th><th>Routine ran</th><th>Saved that day</th></tr>' + rows("char") + "</table></div>" +
-      '<div class="card"><h3>Vic: check-in log</h3><table><tr><th>Day</th><th>Routine ran</th><th>Saved that day</th></tr>' + rows("vic") + "</table></div></div></div>";
+      '<div class="stack"><div class="card"><h3>Alex: check-in log</h3><table><tr><th>Day</th><th>Routine ran</th><th>Saved that day</th></tr>' + rows("char") + "</table></div>" +
+      '<div class="card"><h3>Sam: check-in log</h3><table><tr><th>Day</th><th>Routine ran</th><th>Saved that day</th></tr>' + rows("vic") + "</table></div></div></div>";
   }
 
   /* ---------- confetti + toast (polished: mixed shapes) ---------- */
