@@ -2,7 +2,7 @@
  "generated_at": "2026-10-10T13:21:54-04:00",
  "today": "2026-10-10",
  "kids": {
-  "char": {
+  "ri": {
    "name": "Alex",
    "nick": "Alex",
    "grade": "8th grade",
@@ -93,7 +93,7 @@
    ],
    "wins": [
     {
-     "kid": "char",
+     "kid": "ri",
      "kind": "win",
      "subject": "ELA",
      "name": "Summer Work Presentation",
@@ -102,7 +102,7 @@
      "source": "char_transcript"
     },
     {
-     "kid": "char",
+     "kid": "ri",
      "kind": "win",
      "subject": "Science",
      "name": "IXL skill 6Q7",
@@ -112,7 +112,7 @@
      "source": "char_log"
     },
     {
-     "kid": "char",
+     "kid": "ri",
      "kind": "win",
      "subject": "ELA",
      "name": "Email Etiquette",
@@ -122,7 +122,7 @@
      "source": "char_log"
     },
     {
-     "kid": "char",
+     "kid": "ri",
      "kind": "win",
      "subject": "Spanish",
      "name": "Repaso",
@@ -133,7 +133,7 @@
    ],
    "focus": [
     {
-     "kid": "char",
+     "kid": "ri",
      "kind": "focus",
      "subject": "Science",
      "name": "Exit ticket from 9/11",
@@ -142,7 +142,7 @@
      "source": "char_log"
     },
     {
-     "kid": "char",
+     "kid": "ri",
      "kind": "focus",
      "subject": "Science",
      "name": "Warm Up: Building Blocks of Matter (9/11)",
@@ -151,7 +151,7 @@
      "source": "char_log"
     },
     {
-     "kid": "char",
+     "kid": "ri",
      "kind": "focus",
      "subject": "ELA",
      "name": "Membean vocab (week of 9/8)",
@@ -160,7 +160,7 @@
      "source": "char_log"
     },
     {
-     "kid": "char",
+     "kid": "ri",
      "kind": "focus",
      "subject": "Spanish",
      "name": "Regular-verbs quiz (Socrative)",
@@ -171,7 +171,7 @@
    ],
    "pending": [
     {
-     "kid": "char",
+     "kid": "ri",
      "kind": "pending",
      "subject": "ELA",
      "name": "\"There She Stands\" Analysis",
@@ -181,7 +181,7 @@
      "source": "char_log"
     },
     {
-     "kid": "char",
+     "kid": "ri",
      "kind": "pending",
      "subject": "Spanish",
      "name": "ADL jugar",
@@ -193,7 +193,7 @@
    ],
    "upcoming": [
     {
-     "kid": "char",
+     "kid": "ri",
      "kind": "event",
      "subject": "High school",
      "name": "Westbrook Prep Open House (10:30–2:30)",
@@ -202,7 +202,7 @@
      "source": "path_pipeline"
     },
     {
-     "kid": "char",
+     "kid": "ri",
      "kind": "test",
      "subject": "HSPT",
      "name": "HSPT placement test at Northside Academy",
@@ -294,7 +294,7 @@
    },
    "days_since_last": 25
   },
-  "vic": {
+  "jo": {
    "name": "Samuel",
    "nick": "Sam",
    "grade": "6th grade",
@@ -383,7 +383,7 @@
    "portal_down_days": [],
    "wins": [
     {
-     "kid": "vic",
+     "kid": "jo",
      "kind": "win",
      "subject": "Religion",
      "name": "Creation to Noah test",
@@ -393,7 +393,7 @@
      "source": "vic_log"
     },
     {
-     "kid": "vic",
+     "kid": "jo",
      "kind": "win",
      "subject": "Spanish",
      "name": "Los cognados: buscapalabras y párrafo",
@@ -403,7 +403,7 @@
      "source": "vic_log"
     },
     {
-     "kid": "vic",
+     "kid": "jo",
      "kind": "win",
      "subject": "Religion",
      "name": "Religion assignments",
@@ -414,7 +414,7 @@
    ],
    "focus": [
     {
-     "kid": "vic",
+     "kid": "jo",
      "kind": "focus",
      "subject": "Social Studies",
      "name": "CLOZE paragraph (due 9/11)",
@@ -423,7 +423,7 @@
      "source": "vic_log"
     },
     {
-     "kid": "vic",
+     "kid": "jo",
      "kind": "focus",
      "subject": "Social Studies",
      "name": "Exit ticket (due 9/4)",
@@ -434,7 +434,7 @@
    ],
    "pending": [
     {
-     "kid": "vic",
+     "kid": "jo",
      "kind": "pending",
      "subject": "Religion",
      "name": "Noah's Ark reading + questions",
@@ -444,7 +444,7 @@
      "source": "vic_log"
     },
     {
-     "kid": "vic",
+     "kid": "jo",
      "kind": "pending",
      "subject": "Math",
      "name": "Drill Set 1",
@@ -454,7 +454,7 @@
      "source": "vic_log"
     },
     {
-     "kid": "vic",
+     "kid": "jo",
      "kind": "pending",
      "subject": "Spanish",
      "name": "Cognados en clase",
@@ -467,7 +467,7 @@
    "upcoming": [],
    "last_known_list": [
     {
-     "kid": "vic",
+     "kid": "jo",
      "kind": "due",
      "subject": "Religion",
      "name": "Anatomy of a Covenant + handout + Seesaw",
@@ -476,7 +476,7 @@
      "source": "vic_log"
     },
     {
-     "kid": "vic",
+     "kid": "jo",
      "kind": "due",
      "subject": "Spanish",
      "name": "Cognates classwork",
@@ -484,7 +484,7 @@
      "source": "vic_log"
     },
     {
-     "kid": "vic",
+     "kid": "jo",
      "kind": "due",
      "subject": "Math",
      "name": "IXL skills XCQ / VG6 / MLU",
@@ -492,7 +492,7 @@
      "source": "vic_log"
     },
     {
-     "kid": "vic",
+     "kid": "jo",
      "kind": "due",
      "subject": "Social Studies",
      "name": "Study Ancient Greek geography + vocab",
@@ -500,7 +500,7 @@
      "source": "vic_log"
     },
     {
-     "kid": "vic",
+     "kid": "jo",
      "kind": "due",
      "subject": "Math",
      "name": "Green Sheet",
@@ -509,7 +509,7 @@
      "source": "vic_log"
     },
     {
-     "kid": "vic",
+     "kid": "jo",
      "kind": "test",
      "subject": "Social Studies",
      "name": "Vocab quiz: Ancient Greek geography",
@@ -518,7 +518,7 @@
      "source": "vic_log"
     },
     {
-     "kid": "vic",
+     "kid": "jo",
      "kind": "due",
      "subject": "Math",
      "name": "Khan Academy practice",
@@ -1515,7 +1515,7 @@
   "days_to_test": 38
  },
  "badges": {
-  "char": [
+  "ri": [
    {
     "icon": "🔥",
     "title": "7-night streak",
@@ -1542,7 +1542,7 @@
     "why": "Path made a fresh sheet every day, Sep 18 to Oct 10"
    }
   ],
-  "vic": [
+  "jo": [
    {
     "icon": "🔥",
     "title": "7-night streak",

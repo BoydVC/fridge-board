@@ -21,7 +21,7 @@
   /* ---------- title magnets ---------- */
   function magnets() {
     var cols = ["#e85d75","#f5a623","#2fb67c","#4aa3e8","#7c5cd6","#f08a24","#1f9e8f"];
-    var t = "BOYD FRIDGE BOARD", h = "";
+    var t = "ALEX FRIDGE BOARD", h = "";
     for (var i = 0; i < t.length; i++) {
       if (t[i] === " ") { h += '<span class="sp"></span>'; continue; }
       var rot = ((i * 37) % 9) - 4;
@@ -118,7 +118,7 @@
     var el = $("#weekglance");
     if (!el || !D) return;
     var all = {};
-    ["char", "vic"].forEach(function (kid) {
+    ["ri", "jo"].forEach(function (kid) {
       Object.keys(D.kids[kid].calendar).forEach(function (d) {
         var c = D.kids[kid].calendar[d];
         if (c.run || c.report === "report" || c.report === "onenote" || c.report === "portal-down") all[d] = true;
@@ -128,10 +128,10 @@
     if (!days.length) { el.hidden = true; return; }
     var t = iso(today());
     var cells = days.map(function (d) {
-      var ch = D.kids.char.calendar[d], vi = D.kids.vic.calendar[d];
+      var ch = D.kids.ri.calendar[d], vi = D.kids.jo.calendar[d];
       var con = ch && (ch.run || ch.report === "report" || ch.report === "onenote" || ch.report === "portal-down");
       var von = vi && (vi.run || vi.report === "report" || vi.report === "onenote" || vi.report === "portal-down");
-      var cls = "wd" + (con && von ? " on-both" : con ? " on-char" : von ? " on-vic" : "") + (d === t ? " today" : "");
+      var cls = "wd" + (con && von ? " on-both" : con ? " on-ri" : von ? " on-jo" : "") + (d === t ? " today" : "");
       var mk = "";
       if (con && von) mk = "✓";
       else if (con) mk = "💜";
@@ -153,10 +153,10 @@
   /* ---------- since last open (device-local fingerprint, no invented data) ---------- */
   function snapFP() {
     return {
-      charWins: D.kids.char.wins.length,
-      vicWins: D.kids.vic.wins.length,
-      charCI: D.kids.char.checkin_count,
-      vicCI: D.kids.vic.checkin_count,
+      charWins: D.kids.ri.wins.length,
+      vicWins: D.kids.jo.wins.length,
+      charCI: D.kids.ri.checkin_count,
+      vicCI: D.kids.jo.checkin_count,
       sheets: D.hspt.sheets.length,
       gen: D.generated_at
     };
@@ -179,7 +179,7 @@
     if (cur.vicCI > prev.vicCI) bits.push("+" + (cur.vicCI - prev.vicCI) + " Sam check-in" + (cur.vicCI - prev.vicCI === 1 ? "" : "s"));
     if (cur.sheets > prev.sheets) bits.push("+" + (cur.sheets - prev.sheets) + " HSPT sheet" + (cur.sheets - prev.sheets === 1 ? "" : "s"));
     if (!bits.length) {
-      el.innerHTML = '<span class="tag">Since last open</span><span>No new check-ins or wins since then · last board data ' + esc(fmt(D.kids.char.data_range.last)) + "</span>";
+      el.innerHTML = '<span class="tag">Since last open</span><span>No new check-ins or wins since then · last board data ' + esc(fmt(D.kids.ri.data_range.last)) + "</span>";
     } else {
       el.innerHTML = '<span class="tag">Since last open</span><span>' + bits.map(esc).join(" · ") + "</span>";
     }
@@ -192,7 +192,7 @@
   var CHEERS = ["You've got this!", "Proud of you!", "One step at a time!", "Keep shining!", "Awesome effort!", "Way to go!"];
   function cheerNewWins() {
     var seen = store("seenWins") || null, all = [], fresh = [];
-    ["char", "vic"].forEach(function (kid) { D.kids[kid].wins.forEach(function (w) { var key = kid + "|" + w.name + "|" + w.date; all.push(key); if (seen && seen.indexOf(key) < 0) fresh.push(D.kids[kid].nick + ": " + w.name); }); });
+    ["ri", "jo"].forEach(function (kid) { D.kids[kid].wins.forEach(function (w) { var key = kid + "|" + w.name + "|" + w.date; all.push(key); if (seen && seen.indexOf(key) < 0) fresh.push(D.kids[kid].nick + ": " + w.name); }); });
     store("seenWins", all);
     if (fresh.length) { setTimeout(function () { confetti(innerWidth / 2, innerHeight / 3); toast("🎉 New win! " + fresh[0] + (fresh.length > 1 ? " (+" + (fresh.length - 1) + " more)" : "")); }, 600); }
   }
@@ -202,7 +202,7 @@
     var h = D.hspt, n = h.test_day ? daysBetween(today(), parse(h.test_day)) : null;
     function col(kid) {
       var k = D.kids[kid];
-      var count = kid === "char" && n != null && n >= 0 ?
+      var count = kid === "ri" && n != null && n >= 0 ?
         '<a href="#hspt" class="card count-card pin tilt-l" style="--pinc:#ffd54a"><div><div class="big">' + n + '</div><div class="lbl">days</div></div><div><div style="font-size:18px;font-weight:900">to the HSPT 🧭</div><div class="s">' + h.sheets.length + " practice sheets ready from Path</div></div></a>" : "";
       var bottom = count ? '<div class="row2">' + count + '<div class="card"><h3>📅 Coming up</h3>' + upcomingList(kid, 2) + "</div></div>"
                          : '<div class="card"><h3>📅 Coming up</h3>' + upcomingList(kid) + "</div>";
@@ -212,7 +212,7 @@
         '<div class="card sticky mint pin tilt-r" style="--pinc:#2fb67c"><h3>🌱 Next tiny steps</h3>' + focusList(k.focus, 2, kid) + "</div></div>" +
         bottom + "</section>";
     }
-    return '<div class="home">' + col("char") + col("vic") + "</div>";
+    return '<div class="home">' + col("ri") + col("jo") + "</div>";
   }
 
   function monthGrid(y, m, kid, marks) {
@@ -226,7 +226,7 @@
       if (c && c.report === "portal-down") mk = "☁";
       if (marks && marks[key]) cls += " hs";
       if (key === t) cls += " today";
-      if (D.hspt.test_day === key && kid === "char") mk = "🏁";
+      if (D.hspt.test_day === key && kid === "ri") mk = "🏁";
       h += '<div class="' + cls + '">' + d + (mk ? '<span class="m">' + mk + "</span>" : "") + "</div>";
     }
     return h + "</div></div>";
@@ -234,12 +234,12 @@
 
   function kidPage(kid) {
     var k = D.kids[kid], marks = null;
-    if (kid === "char") { marks = {}; D.hspt.sheets.forEach(function (s) { if (s.date) marks[s.date] = 1; }); }
+    if (kid === "ri") { marks = {}; D.hspt.sheets.forEach(function (s) { if (s.date) marks[s.date] = 1; }); }
     var t = today(), months = [[2026, 8], [2026, 9]];
     if (t.getFullYear() === 2026 && t.getMonth() > 9) months = [[2026, 9], [2026, t.getMonth()]];
     var cal = '<div class="cal" style="--kc:var(--' + kid + ')">' + months.map(function (ym) { return monthGrid(ym[0], ym[1], kid, marks); }).join("") + "</div>" +
       '<div class="legend"><span><i class="sw" style="background:var(--' + kid + ')"></i>tutor check-in</span><span>★ grade report saved</span><span>☁ school site down</span>' +
-      (kid === "char" ? '<span><i class="sw" style="box-shadow:inset 0 -4px 0 var(--hspt);background:#f6f3ec"></i>HSPT practice sheet</span>' : "") + "<span>┅ today</span></div>";
+      (kid === "ri" ? '<span><i class="sw" style="box-shadow:inset 0 -4px 0 var(--hspt);background:#f6f3ec"></i>HSPT practice sheet</span>' : "") + "<span>┅ today</span></div>";
     var classes = k.classes ? '<div class="report">' + k.classes.classes.map(function (c) {
       if (c.focus) return '<div class="subj focus"><div class="sn">' + ic(c.subject) + " " + esc(c.subject) + '</div><div class="sg">🌱 Focus area</div></div>';
       if (c.credit) return '<div class="subj credit"><div class="sn">' + ic(c.subject) + " " + esc(c.subject) + '</div><div class="sg">✓ On track</div></div>';
@@ -291,7 +291,7 @@
       return '<div style="margin-bottom:10px"><b>Day ' + s.day + "</b> <span class='muted small'>" + fmtDow(s.date) + " · " + s.questions + ' questions</span><div class="diffrow" style="margin-top:4px">' +
         s.sections.map(function (x) { return '<span class="' + dclass(x.difficulty) + '">' + esc(x.label) + "</span>"; }).join("") + "</div></div>";
     }).join("");
-    var openHouse = D.kids.char.upcoming.filter(function (u) { return u.kind === "event"; });
+    var openHouse = D.kids.ri.upcoming.filter(function (u) { return u.kind === "event"; });
     return '<div class="hspt"><div class="stack"><div class="card pin" style="--pinc:var(--hspt)"><h3>🧭 HSPT countdown</h3>' + ring +
       '<div class="small muted" style="text-align:center">Path makes a 10–15 minute practice sheet every morning.</div></div>' +
       '<div class="card"><h3>📝 Practice scores</h3>' + (h.scores.length ? "" : empty("✏️", "No scores saved yet. When a sheet gets graded with Path, the score will show up here.")) + "</div>" +
@@ -322,13 +322,13 @@
     };
     var att = function (kid) { var a = D.kids[kid].attendance; return a ? a.absences + " absence" + (a.absences === 1 ? "" : "s") + " as of " + fmt(a.as_of) : "not logged"; };
     return '<div class="gu"><div class="stack"><div class="card"><h3>☕ For grown-ups</h3><p class="small" style="margin-top:0">This board is built only from what the tutor bots already saved on this computer. It runs locally and never sends anything anywhere. Low grades show up as <b>focus areas</b> with a next step, never as a score.</p>' +
-      '<p class="small"><b>Alex classes:</b> ' + cls("char") + "<br><b>Attendance:</b> " + att("char") + '</p><p class="small"><b>Sam classes:</b> ' + cls("vic") + "<br><b>Attendance:</b> " + att("vic") + "</p></div>" +
+      '<p class="small"><b>Alex classes:</b> ' + cls("ri") + "<br><b>Attendance:</b> " + att("ri") + '</p><p class="small"><b>Sam classes:</b> ' + cls("jo") + "<br><b>Attendance:</b> " + att("jo") + "</p></div>" +
       '<div class="card"><h3>🕳️ Gaps (what\'s missing)</h3><ul class="small gaps">' + D.gaps.map(function (g) { return "<li>" + esc(g) + "</li>"; }).join("") + "</ul>" +
       (D.warnings.length ? '<h3 style="margin-top:12px">⚠️ Collector warnings</h3><ul class="small">' + D.warnings.map(function (w) { return "<li>" + esc(w) + "</li>"; }).join("") + "</ul>" : "") + "</div>" +
       '<div class="card"><h3>📂 Sources (read-only)</h3><table>' + D.sources.map(function (s) { return "<tr><td>" + esc(s.label) + "</td><td><code>" + esc(s.path) + "</code></td></tr>"; }).join("") + "</table>" +
       '<p class="small muted">Data collected ' + esc(D.generated_at.replace("T", " ").slice(0, 16)) + " ET." + (SNAP ? " This is an offline snapshot." : ' <button class="linkbtn" id="refresh">Refresh now</button>') + "</p></div></div>" +
-      '<div class="stack"><div class="card"><h3>Alex: check-in log</h3><table><tr><th>Day</th><th>Routine ran</th><th>Saved that day</th></tr>' + rows("char") + "</table></div>" +
-      '<div class="card"><h3>Sam: check-in log</h3><table><tr><th>Day</th><th>Routine ran</th><th>Saved that day</th></tr>' + rows("vic") + "</table></div></div></div>";
+      '<div class="stack"><div class="card"><h3>Alex: check-in log</h3><table><tr><th>Day</th><th>Routine ran</th><th>Saved that day</th></tr>' + rows("ri") + "</table></div>" +
+      '<div class="card"><h3>Sam: check-in log</h3><table><tr><th>Day</th><th>Routine ran</th><th>Saved that day</th></tr>' + rows("jo") + "</table></div></div></div>";
   }
 
   /* ---------- confetti + toast (polished: mixed shapes) ---------- */
@@ -369,7 +369,7 @@
   function toast(msg) { var t = $("#toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(tt); tt = setTimeout(function () { t.classList.remove("show"); }, 3200); }
 
   /* ---------- routing ---------- */
-  var ROUTES = {home: home, char: function () { return kidPage("char"); }, vic: function () { return kidPage("vic"); }, hspt: hsptPage, grownups: grownups};
+  var ROUTES = {home: home, ri: function () { return kidPage("ri"); }, jo: function () { return kidPage("jo"); }, hspt: hsptPage, grownups: grownups};
   function route() {
     var tab = (location.hash || "#home").slice(1);
     if (!ROUTES[tab]) tab = "home";
@@ -406,7 +406,7 @@
   }
   function setKiosk(on) {
     kiosk = on; clearInterval(kt);
-    if (on) kt = setInterval(function () { var order = ["home", "char", "vic", "hspt"], cur = (location.hash || "#home").slice(1); location.hash = order[(order.indexOf(cur) + 1) % order.length]; }, 40000);
+    if (on) kt = setInterval(function () { var order = ["home", "ri", "jo", "hspt"], cur = (location.hash || "#home").slice(1); location.hash = order[(order.indexOf(cur) + 1) % order.length]; }, 40000);
     restartSlideBar();
     foot();
   }

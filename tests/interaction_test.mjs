@@ -32,14 +32,14 @@ try {
   await send("Runtime.enable"); await send("Page.enable");
   await send("Page.navigate", { url: `http://127.0.0.1:${PORT}/#home` }); await sleep(2500);
   check("home rendered", await ev(`!!document.querySelector('.kidcol')`));
-  await ev(`document.querySelector('.kidhead.char .badge').click()`); await sleep(400);
+  await ev(`document.querySelector('.kidhead.ri .badge').click()`); await sleep(400);
   const t1 = await ev(`document.getElementById('toast').textContent`);
   check("badge tap shows a celebration toast", /streak|perfect|A-Team|attendance|HSPT/.test(t1), t1);
-  await ev(`document.querySelector('.hi5[data-kid=vic]').click()`); await sleep(400);
+  await ev(`document.querySelector('.hi5[data-kid=jo]').click()`); await sleep(400);
   const t2 = await ev(`document.getElementById('toast').textContent`);
   check("high-five toast", /High five, Sam/.test(t2), t2);
-  check("high-five counter saved locally", (await ev(`localStorage.getItem('fb:hi5:vic')`)) === "1");
-  for (const tab of ["char", "vic", "hspt", "grownups", "home"]) {
+  check("high-five counter saved locally", (await ev(`localStorage.getItem('fb:hi5:jo')`)) === "1");
+  for (const tab of ["ri", "jo", "hspt", "grownups", "home"]) {
     await ev(`location.hash='#${tab}'`); await sleep(500);
     check(`tab ${tab} active`, await ev(`document.querySelector('#tabs a.on').dataset.tab`) === tab);
   }

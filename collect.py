@@ -26,9 +26,9 @@ AG = os.environ.get("FB_AGENT_ROOT", "/home/box/agent-data/agents")
 HSPT = os.environ.get("FB_HSPT_ROOT", "/workspace/hspt")
 
 KIDS = {
-    "char": {"agent": "ff5dfcd2-09b9-49dd-952f-14893da73ab0", "routine": "char-weeknight-homework-check-in",
+    "ri": {"agent": "ff5dfcd2-09b9-49dd-952f-14893da73ab0", "routine": "char-weeknight-homework-check-in",
              "name": "Alex", "nick": "Alex", "grade": "8th grade", "tutor": "Alex Tutor", "who": "Alex"},
-    "vic": {"agent": "7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1", "routine": "vic-weeknight-homework-check-in",
+    "jo": {"agent": "7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1", "routine": "vic-weeknight-homework-check-in",
             "name": "Samuel", "nick": "Sam", "grade": "6th grade", "tutor": "Sam Tutor", "who": "Sam"},
 }
 PATH_AGENT = "fd400f67-24e0-40fd-9d9f-fcdcb2969805"
@@ -332,8 +332,8 @@ def main():
         "hspt": hspt,
         "badges": badges,
         "sources": [
-            {"label": "Alex Tutor memory log + routine runs + visible messages (counts only)", "path": f"{AG}/{KIDS['char']['agent']}/"},
-            {"label": "Sam Tutor memory log + routine runs + visible messages (counts only)", "path": f"{AG}/{KIDS['vic']['agent']}/"},
+            {"label": "Alex Tutor memory log + routine runs + visible messages (counts only)", "path": f"{AG}/{KIDS['ri']['agent']}/"},
+            {"label": "Sam Tutor memory log + routine runs + visible messages (counts only)", "path": f"{AG}/{KIDS['jo']['agent']}/"},
             {"label": "Path profile (HSPT test day)", "path": f"{AG}/{PATH_AGENT}/profile.json"},
             {"label": "Path HSPT drill sheets", "path": f"{HSPT}/hspt-day*.html, {HSPT}/worksheets/"},
             {"label": "Path scholarship pipeline (Open House date)", "path": f"{HSPT}/scholarships/pipeline.md"},
@@ -350,7 +350,7 @@ def main():
 
 
 def build_badges(kids, hspt):
-    b = {"char": [], "vic": []}
+    b = {"ri": [], "jo": []}
     for kid, k in kids.items():
         if k["best_streak"] >= 3:
             b[kid].append({"icon": "🔥", "title": f"{k['best_streak']}-night streak",
@@ -372,7 +372,7 @@ def build_badges(kids, hspt):
             if m and "test" in w["name"].lower() and int(m.group(1)) / int(m.group(2)) >= 0.9:
                 b[kid].append({"icon": "🏆", "title": "Test champ", "why": f"{w['name']}: {w['score']}"})
     if hspt["daily_streak"] >= 3:
-        b["char"].append({"icon": "🧭", "title": f"{len(hspt['sheets'])} HSPT practice days",
+        b["ri"].append({"icon": "🧭", "title": f"{len(hspt['sheets'])} HSPT practice days",
                           "why": f"Path made a fresh sheet every day, {fmt(hspt['streak_range'][0])} to {fmt(hspt['streak_range'][1])}"})
     return b
 
@@ -385,7 +385,7 @@ def build_gaps(kids, hspt, today):
                      f"({k['days_since_last']} days ago). Nothing after that is shown.")
         if not k["upcoming"]:
             g.append(f"{k['nick']}: no upcoming tests or assignments are logged.")
-    if not kids["char"]["last_known_list"]:
+    if not kids["ri"]["last_known_list"]:
         g.append("Alex: her OneNote homework list was never saved to the tutor's notes, so there are no assignment due dates for her.")
     if not hspt["scores"]:
         g.append("HSPT: practice sheets are saved, but no scores are logged anywhere on this computer.")

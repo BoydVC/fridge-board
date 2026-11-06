@@ -75,7 +75,7 @@ after = fingerprint(files)
 check("sources untouched by collector (sha256 + mtime + size)", before == after and len(files) > 10, f"{len(files)} files")
 
 # 2. Shape
-check("both kids present", set(board["kids"]) == {"char", "vic"})
+check("both kids present", set(board["kids"]) == {"ri", "jo"})
 check("HSPT drill sheets parsed", len(board["hspt"]["sheets"]) >= 1, str(len(board["hspt"]["sheets"])))
 check("every sheet has a date", all(s["date"] for s in board["hspt"]["sheets"]))
 check("check-in runs parsed for both kids", all(k["checkin_count"] > 0 for k in board["kids"].values()))
@@ -111,8 +111,8 @@ except Exception as e:
 
 # 7. Rendered pages: no raw failing scores visible, key sections present
 RAW_LOW = [r"\bE\s*\(?\d", r"\b30%", r"\b29%", r"\b33%", r"\b67%", r"\b60%", r"\b0/4\b", r"\b0/2\b", r"\b0/5\b", r"\b2/6\b", r"\b6/10\b", r"30/45", r"Missing"]
-for route, must in [("home", ["Wins", "Next tiny steps", "Check-ins"]), ("char", ["Class snapshot", "Focus area"]),
-                    ("vic", ["Last homework list", "Focus area"]), ("hspt", ["HSPT countdown", "No scores saved yet"]), ("grownups", ["Gaps"])]:
+for route, must in [("home", ["Wins", "Next tiny steps", "Check-ins"]), ("ri", ["Class snapshot", "Focus area"]),
+                    ("jo", ["Last homework list", "Focus area"]), ("hspt", ["HSPT countdown", "No scores saved yet"]), ("grownups", ["Gaps"])]:
     dom = dump_dom(f"{BASE}/#{route}")
     view = dom.split('id="view"', 1)[-1]
     text = re.sub(r"<[^>]+>", " ", view)
