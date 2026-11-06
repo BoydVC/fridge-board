@@ -1,4 +1,4 @@
-/* Boyd Fridge Board: a kid-friendly view over the tutor bots' notes. Local only, read-only.
+/* Alex Fridge Board: a kid-friendly view over the tutor bots' notes. Local only, read-only.
    Remastered Sat Oct 10 afternoon — warmer fridge UI, week glance, since-last-open, badge shelf. */
 (function () {
   "use strict";
