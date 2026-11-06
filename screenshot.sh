@@ -18,8 +18,8 @@ if [ -f dist/fridge-board-snapshot.html ]; then
   shot "file://$PWD/dist/fridge-board-snapshot.html#home" screenshots/00-best-home.png
 fi
 shot "http://127.0.0.1:$PORT/#home"     screenshots/01-home.png
-shot "http://127.0.0.1:$PORT/#char"     screenshots/02-char.png
-shot "http://127.0.0.1:$PORT/#vic"      screenshots/03-vic.png
+shot "http://127.0.0.1:$PORT/#ri"     screenshots/02-char.png
+shot "http://127.0.0.1:$PORT/#jo"      screenshots/03-vic.png
 shot "http://127.0.0.1:$PORT/#hspt"     screenshots/04-hspt.png
 shot "http://127.0.0.1:$PORT/#grownups" screenshots/05-grownups.png
 [ -f dist/fridge-board-snapshot.html ] && shot "file://$PWD/dist/fridge-board-snapshot.html#home" screenshots/06-offline-snapshot.png

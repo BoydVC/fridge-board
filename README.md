@@ -49,7 +49,7 @@ every 40 s for an always-on screen. The screen dims from 9 PM to 6 AM.
 | Source | Used for |
 |---|---|
 | `/home/box/agent-data/agents/ff5dfcd2-…/memory/log/2026-09.md` (Alex Tutor) | grade snapshots, newly graded items, attendance, report days |
-| `…/ff5dfcd2-…/automations/char-weeknight-homework-check-in/runs.json` | check-in nights + times |
+| `…/ff5dfcd2-…/automations/ri-weeknight-homework-check-in/runs.json` | check-in nights + times |
 | `…/ff5dfcd2-…/store.db` (copied, visible messages only) | verifying a couple of items (e.g. Summer Work Presentation 5/5) |
 | `/home/box/agent-data/agents/7e4990fe-…/` (Sam Tutor): same three | same, plus Sam's OneNote homework/test list from Sep 15 |
 | `/home/box/agent-data/agents/fd400f67-…/profile.json` (Path) | HSPT test day |
