@@ -19,7 +19,7 @@ data = json.dumps(board, ensure_ascii=False).replace("</", "<\\/")
 html = html.replace('<link rel="stylesheet" href="app.css">', "<style>\n" + css + "\n</style>")
 html = html.replace('<script src="app.js"></script>',
                     "<script>window.__BOARD__ = " + data + ";</script>\n<script>\n" + js.replace("</script", "<\\/script") + "\n</script>")
-html = html.replace("<title>Boyd Fridge Board</title>", "<title>Boyd Fridge Board · snapshot " + board["generated_at"][:10] + "</title>")
+html = html.replace("<title>Alex Fridge Board</title>", "<title>Alex Fridge Board · snapshot " + board["generated_at"][:10] + "</title>")
 os.makedirs(os.path.join(HERE, "dist"), exist_ok=True)
 out = os.path.join(HERE, "dist", "fridge-board-snapshot.html")
 with open(out, "w", encoding="utf-8") as f:

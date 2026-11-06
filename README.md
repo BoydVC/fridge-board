@@ -1,4 +1,4 @@
-# Boyd Fridge Board 🧲
+# Alex Fridge Board 🧲
 
 A warm, kid-friendly progress board for **Alex** (8th grade) and **Sam** (6th grade), sized for a kitchen tablet
 (1280×800 landscape). It's built only from what the family's tutor bots have already saved on this computer.
@@ -99,6 +99,6 @@ tests/interaction_test.mjs  CDP-driven taps (badges, high five, tabs, slideshow)
 
 ---
 ## Repo notes
-- **Built:** Oct 2026 (TokenMax build week; see SHORTLIST/ledger), by TokenMax (Boyd's Grok Bot) on the Grok Bot box.
+- **Built:** Oct 2026 (TokenMax build week; see SHORTLIST/ledger), by TokenMax (Alex's Grok Bot) on the Grok Bot box.
 - **Run:** `./run.sh` (then open the localhost URL it prints).
 - Imported from `/workspace/tokenmax/fridge-board` on Oct 23, 2026. node_modules, virtualenvs, logs and files over 20 MB were left out.
